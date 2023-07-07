@@ -9,7 +9,7 @@ double difference = 0;
 Random random = new Random();
 for (int i = 0; i < 10; i++)
 {
-    array[i] = random.NextDouble() * 100;
+    array[i] = Math.Round(random.NextDouble()*100, 2);
     if (array[i] > max)
     {
         max = array[i];
